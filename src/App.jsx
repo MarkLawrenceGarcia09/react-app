@@ -55,6 +55,7 @@ const App = () => {
 
       {/* Sections */}
       <About />
+      
       <Services />
       <Portfolio />
       <Contact />
