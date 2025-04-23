@@ -44,7 +44,7 @@ const App = () => {
               <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 overflow-hidden rounded-full shadow-lg border-4 border-[#8ecae6]/20">
                 <img
                   src={profilePicture}
-                  alt="Mark Lawrence Garcia"
+                  alt="Mark Lawrence Garcia Pogi"
                   className="w-full h-full object-cover"
                 />
               </div>
