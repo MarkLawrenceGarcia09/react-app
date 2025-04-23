@@ -32,7 +32,7 @@ const App = () => {
             {/* Text Content */}
             <div className="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white">
-                Hello, I'm <span className="text-[#8ecae6]">Mark Lawrence Garcia Pogi</span>
+                Hello, I'm <span className="text-[#8ecae6]">Mark Lawrence Garcia</span>
               </h1>
               <p className="text-xl sm:text-2xl text-white/80">
                 I am a Front-End Web Developer passionate about creating stunning, user-friendly websites.
