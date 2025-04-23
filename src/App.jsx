@@ -8,6 +8,7 @@ import backgroundVideo from './videos/background-vid.mp4';
 import profilePicture from './pics/2x2x2.jpg'; // ✅ Correct path usage
 import './App.css';
 
+
 const App = () => {
   return (
     <div className="relative w-full h-full">
