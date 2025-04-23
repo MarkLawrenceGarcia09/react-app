@@ -32,7 +32,7 @@ const App = () => {
             {/* Text Content */}
             <div className="w-full md:w-1/2 text-center md:text-left order-2 md:order-1">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white">
-                Hello, I'm <span className="text-[#8ecae6]">Mark Lawrence Garcia</span>
+                Hello, I'm <span className="text-[#8ecae6]">Mark Lawrence Garcia Pogi</span>
               </h1>
               <p className="text-xl sm:text-2xl text-white/80">
                 I am a Front-End Web Developer passionate about creating stunning, user-friendly websites.
@@ -44,7 +44,7 @@ const App = () => {
               <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 overflow-hidden rounded-full shadow-lg border-4 border-[#8ecae6]/20">
                 <img
                   src={profilePicture}
-                  alt="Mark Lawrence Garcia Pogi"
+                  alt="Mark Lawrence Garcia"
                   className="w-full h-full object-cover"
                 />
               </div>
