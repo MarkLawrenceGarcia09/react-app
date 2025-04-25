@@ -100,6 +100,16 @@ const Navbar = () => {
       handleCloseSidePanel()
     }
 
+    // Special case for "home" - scroll to the very top
+    if (sectionId === "home") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+      setActiveSection("home")
+      return
+    }
+
     const section = document.getElementById(sectionId)
     if (section) {
       // Get the navbar height to offset the scroll position
@@ -119,6 +129,7 @@ const Navbar = () => {
       setActiveSection(sectionId)
     }
   }
+
 
   return (
     <>
