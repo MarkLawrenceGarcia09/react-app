@@ -10,28 +10,15 @@ const Services = () => {
     {
       icon: <Code className="h-10 w-10 text-[#8ecae6]" />,
       title: 'Frontend Development',
-      description: 'Building responsive, interactive websites using modern technologies like React, Next.js, and Tailwind CSS.'
+      description: 'Building responsive, interactive websites using modern technologies like React, PHP, and Tailwind CSS.'
     },
     {
       icon: <Smartphone className="h-10 w-10 text-[#8ecae6]" />,
       title: 'Responsive Design',
       description: 'Ensuring your website looks and functions perfectly across all devices, from desktops to smartphones.'
-    },
-    {
-      icon: <Globe className="h-10 w-10 text-[#8ecae6]" />,
-      title: 'Website Optimization',
-      description: 'Improving website performance, loading speed, and SEO to enhance user experience and search engine rankings.'
-    },
-    {
-      icon: <Palette className="h-10 w-10 text-[#8ecae6]" />,
-      title: 'UI/UX Design',
-      description: 'Creating intuitive user interfaces and seamless user experiences that keep visitors engaged and satisfied.'
-    },
-    {
-      icon: <Gauge className="h-10 w-10 text-[#8ecae6]" />,
-      title: 'Performance Optimization',
-      description: 'Enhancing website speed and efficiency through code optimization, image compression, and modern best practices.'
     }
+   
+    
   ]
 
   return (

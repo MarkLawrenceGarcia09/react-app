@@ -5,15 +5,15 @@ import { ExternalLink, Github } from 'lucide-react'
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all')
   
-  const filters = ['all', 'web', 'design', 'app']
+  const filters = ['all', 'web', 'design']
   
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Website',
+      title: 'Online Enrollment System',
       category: 'web',
       image: '/placeholder.svg?height=600&width=800',
-      description: 'A fully responsive e-commerce platform built with React and Next.js',
+      description: 'A fully responsive Online Enrollment System built with HTML, CSS, PHP, Javascript, and MySQL',
       demoLink: '#',
       codeLink: '#',
     },
@@ -28,40 +28,14 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'Task Management App',
-      category: 'app',
-      image: '/placeholder.svg?height=600&width=800',
-      description: 'A productivity app for managing tasks and projects efficiently',
-      demoLink: '#',
-      codeLink: '#',
-    },
-    {
-      id: 4,
-      title: 'Restaurant Website',
+      title: 'Class Scheduling System',
       category: 'web',
       image: '/placeholder.svg?height=600&width=800',
-      description: 'A responsive website for a local restaurant with online ordering',
+      description: 'A dynamic and responsive class scheduling platform built with a combination of HTML, CSS, JavaScript, PHP, and MySQL.',
       demoLink: '#',
       codeLink: '#',
     },
-    {
-      id: 5,
-      title: 'Travel Blog',
-      category: 'web',
-      image: '/placeholder.svg?height=600&width=800',
-      description: 'A travel blog with dynamic content and interactive maps',
-      demoLink: '#',
-      codeLink: '#',
-    },
-    {
-      id: 6,
-      title: 'Mobile App UI',
-      category: 'design',
-      image: '/placeholder.svg?height=600&width=800',
-      description: 'UI/UX design for a fitness tracking mobile application',
-      demoLink: '#',
-      codeLink: '#',
-    },
+    
   ]
   
   const filteredProjects = activeFilter === 'all' 

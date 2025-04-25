@@ -137,7 +137,7 @@ const Navbar = () => {
               onClick={(e) => scrollToSection(e, "home")}
               className="text-white font-bold text-xl transition-transform hover:scale-110 hover:text-[#8ecae6] duration-300"
             >
-              Mark Lawrence
+              Mark.
             </a>
 
             {/* Hamburger Button */}
@@ -213,7 +213,7 @@ const Navbar = () => {
           >
             <div className="flex justify-between items-center mb-8">
               <a href="#home" onClick={(e) => scrollToSection(e, "home")} className="text-[#8ecae6] font-bold text-xl">
-                Mark Lawrence
+                Mark.
               </a>
               <button
                 onClick={handleCloseSidePanel}

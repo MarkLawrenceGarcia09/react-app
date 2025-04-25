@@ -13,20 +13,16 @@ const About = () => {
           {/* About Text */}
           <div className="bg-black/30 backdrop-blur-sm p-6 rounded-xl">
             <h3 className="text-2xl font-bold text-white mb-4">Who I Am</h3>
-            <p className="text-white/80 mb-6">
-              I'm a passionate Front-End Web Developer with a keen eye for design and a commitment to creating 
-              responsive, user-friendly websites. With expertise in modern web technologies, I transform ideas 
-              into engaging digital experiences.
-            </p>
-            <p className="text-white/80 mb-6">
-              My journey in web development began 5 years ago, and since then, I've worked on numerous projects 
-              ranging from personal portfolios to complex e-commerce platforms. I believe in clean code, 
-              intuitive interfaces, and staying current with the latest industry trends.
-            </p>
-            <p className="text-white/80">
-              When I'm not coding, you can find me exploring new design trends, contributing to open-source 
-              projects, or enjoying outdoor activities to recharge my creative energy.
-            </p>
+              <p className="text-white/80 mb-6">
+                I'm a recent graduate and aspiring Front-End Web Developer with a strong passion for creating clean, responsive, and user-friendly websites. During my thesis, I designed and developed functional websites that showcased my ability to turn ideas into practical digital solutions.
+              </p>
+              <p className="text-white/80 mb-6">
+                While I may not have formal work experience yet, I've built real-world web applications as part of my academic journey, focusing on usability, design, and performance. I'm constantly learning and adapting to modern web technologies like HTML, CSS, JavaScript, and frameworks to keep my skills sharp and relevant.
+              </p>
+              <p className="text-white/80">
+                Outside of coding, I enjoy exploring new UI/UX trends, improving my design eye, and taking on small side projects that challenge me to grow as a developer.
+              </p>
+
           </div>
 
           {/* Skills */}
@@ -43,7 +39,7 @@ const About = () => {
                   <h4 className="text-xl font-semibold text-white">Frontend Development</h4>
                 </div>
                 <p className="text-white/80">
-                  HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS, Responsive Design
+                  HTML5, CSS3, JavaScript, React, PHP, MySQL, Tailwind CSS, Bootsrap CSS, and Responsive Design
                 </p>
               </div>
               
@@ -56,22 +52,12 @@ const About = () => {
                   <h4 className="text-xl font-semibold text-white">Tools & Workflow</h4>
                 </div>
                 <p className="text-white/80">
-                  Git, GitHub, VS Code, Figma, Adobe XD, Webpack, npm, Vercel
+                  GitHub, VS Code, Figma, Adobe Photoshop, Adobe Premiere Pro, Adobe After Effects, npm, Vercel
                 </p>
               </div>
               
-              {/* Skill Card 3 */}
-              <div className="bg-black/30 backdrop-blur-sm p-6 rounded-xl">
-                <div className="flex items-center mb-4">
-                  <div className="bg-[#8ecae6]/20 p-3 rounded-lg mr-4">
-                    <Lightbulb className="h-6 w-6 text-[#8ecae6]" />
-                  </div>
-                  <h4 className="text-xl font-semibold text-white">UI/UX Design</h4>
-                </div>
-                <p className="text-white/80">
-                  Wireframing, Prototyping, User Research, Accessibility, Color Theory
-                </p>
-              </div>
+              
+             
               
               {/* Skill Progress Bars */}
               <div className="bg-black/30 backdrop-blur-sm p-6 rounded-xl">
@@ -81,21 +67,21 @@ const About = () => {
                 <div className="mb-3">
                   <div className="flex justify-between mb-1">
                     <span className="text-white">HTML/CSS</span>
-                    <span className="text-[#8ecae6]">95%</span>
+                    <span className="text-[#8ecae6]">80%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '95%' }}></div>
+                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '80%' }}></div>
                   </div>
                 </div>
                 
                 {/* JavaScript */}
                 <div className="mb-3">
                   <div className="flex justify-between mb-1">
-                    <span className="text-white">JavaScript</span>
-                    <span className="text-[#8ecae6]">90%</span>
+                    <span className="text-white">PHP</span>
+                    <span className="text-[#8ecae6]">50%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '70%' }}></div>
                   </div>
                 </div>
                 
@@ -103,21 +89,21 @@ const About = () => {
                 <div className="mb-3">
                   <div className="flex justify-between mb-1">
                     <span className="text-white">React</span>
-                    <span className="text-[#8ecae6]">85%</span>
+                    <span className="text-[#8ecae6]">50%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '85%' }}></div>
+                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '50%' }}></div>
                   </div>
                 </div>
                 
                 {/* UI/UX */}
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="text-white">UI/UX Design</span>
-                    <span className="text-[#8ecae6]">80%</span>
+                    <span className="text-white">Javascript</span>
+                    <span className="text-[#8ecae6]">50%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '80%' }}></div>
+                    <div className="bg-[#8ecae6] h-2 rounded-full" style={{ width: '50%' }}></div>
                   </div>
                 </div>
               </div>
