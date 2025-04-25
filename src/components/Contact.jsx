@@ -136,7 +136,7 @@ const Contact = () => {
               <h4 className="text-base md:text-lg font-semibold text-white mb-3 md:mb-4">Connect With Me</h4>
               <div className="flex flex-wrap gap-2 md:gap-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/mark.lawrence.garcia.895407"
                   className="bg-[#8ecae6]/20 p-2 md:p-3 rounded-full hover:bg-[#8ecae6] text-white hover:text-black transition-all duration-300"
                 >
                   <svg className="h-4 w-4 md:h-5 md:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -148,7 +148,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/garciamarkk?t=ugMeg_dFJKclxZDvDhZ_zA&s=07"
                   className="bg-[#8ecae6]/20 p-2 md:p-3 rounded-full hover:bg-[#8ecae6] text-white hover:text-black transition-all duration-300"
                 >
                   <svg className="h-4 w-4 md:h-5 md:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -156,7 +156,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/garciamarkk9/"
                   className="bg-[#8ecae6]/20 p-2 md:p-3 rounded-full hover:bg-[#8ecae6] text-white hover:text-black transition-all duration-300"
                 >
                   <svg className="h-4 w-4 md:h-5 md:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -168,7 +168,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/MarkLawrenceGarcia09"
                   className="bg-[#8ecae6]/20 p-2 md:p-3 rounded-full hover:bg-[#8ecae6] text-white hover:text-black transition-all duration-300"
                 >
                   <svg className="h-4 w-4 md:h-5 md:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -180,7 +180,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/mark-lawrence-garcia-6a2151322/"
                   className="bg-[#8ecae6]/20 p-2 md:p-3 rounded-full hover:bg-[#8ecae6] text-white hover:text-black transition-all duration-300"
                 >
                   <svg className="h-4 w-4 md:h-5 md:w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

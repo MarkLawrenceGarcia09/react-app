@@ -1,6 +1,9 @@
 "use client"
 import { useState } from 'react'
 import { ExternalLink, Github } from 'lucide-react'
+import enrollmentImg from '../pics/enrollment.png' // adjust the path as needed
+import portfolioImg from '../pics/portfolio.png'
+import scheduleImg from '../pics/scheduling.png'
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all')
@@ -12,28 +15,28 @@ const Portfolio = () => {
       id: 1,
       title: 'Online Enrollment System',
       category: 'web',
-      image: '/placeholder.svg?height=600&width=800',
+      image: enrollmentImg,
       description: 'A fully responsive Online Enrollment System built with HTML, CSS, PHP, Javascript, and MySQL',
-      demoLink: '#',
-      codeLink: '#',
+      demoLink: 'https://binhs.org/',
+      
     },
     {
       id: 2,
       title: 'Portfolio Design',
       category: 'design',
-      image: '/placeholder.svg?height=600&width=800',
+      image: portfolioImg,
       description: 'Modern portfolio design with smooth animations and intuitive navigation',
-      demoLink: '#',
-      codeLink: '#',
+      demoLink: 'https://react-app-eta-cyan-13.vercel.app/',
+      
     },
     {
       id: 3,
       title: 'Class Scheduling System',
       category: 'web',
-      image: '/placeholder.svg?height=600&width=800',
+      image: scheduleImg,
       description: 'A dynamic and responsive class scheduling platform built with a combination of HTML, CSS, JavaScript, PHP, and MySQL.',
-      demoLink: '#',
-      codeLink: '#',
+      demoLink: 'https://binhs.org/class-scheduling/index.php',
+     
     },
     
   ]
@@ -95,14 +98,7 @@ const Portfolio = () => {
                   >
                     <ExternalLink className="h-5 w-5" />
                   </a>
-                  <a 
-                    href={project.codeLink} 
-                    className="bg-[#8ecae6] text-black p-3 rounded-full hover:bg-white transition-colors duration-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="h-5 w-5" />
-                  </a>
+                 
                 </div>
               </div>
               
