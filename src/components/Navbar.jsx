@@ -9,7 +9,7 @@ const cn = (...classes) => {
 
 // Define navigation items with icons and href
 const navItems = [
-  { name: "Home", icon: <Home className="w-5 h-5" />, href: "#home" },
+  { name: "Home", icon: <Home className="w-5 h-5" />, href: "#top" }, // Changed to #top
   { name: "About", icon: <User className="w-5 h-5" />, href: "#about" },
   { name: "Services", icon: <Briefcase className="w-5 h-5" />, href: "#services" },
   { name: "Portfolio", icon: <FolderOpen className="w-5 h-5" />, href: "#portfolio" },
@@ -19,14 +19,31 @@ const navItems = [
 const Navbar = () => {
   const [isSidePanelOpen, setIsSidePanelOpen] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
-  const [activeSection, setActiveSection] = useState("home")
+  const [activeSection, setActiveSection] = useState("top") // Changed from "home" to "top"
   const [isScrolled, setIsScrolled] = useState(false)
+
+  // Enable smooth scrolling for the entire page
+  useEffect(() => {
+    // Add smooth-scroll class to html element
+    document.documentElement.classList.add("scroll-smooth")
+    
+    return () => {
+      // Clean up when component unmounts
+      document.documentElement.classList.remove("scroll-smooth")
+    }
+  }, [])
 
   // Handle scroll events to update navbar appearance and active section
   useEffect(() => {
     const handleScroll = () => {
       // Update navbar background on scroll
       setIsScrolled(window.scrollY > 50)
+
+      // Set Home/top as active when at the top of the page
+      if (window.scrollY < 50) {
+        setActiveSection("top")
+        return
+      }
 
       // Update active section based on scroll position
       const sections = navItems.map((item) => item.href.substring(1))
@@ -91,48 +108,20 @@ const Navbar = () => {
     }
   }
 
-  // Smooth scroll function
-  const scrollToSection = (e, sectionId) => {
-    e.preventDefault()
-
-    // Close the sidebar if it's open
+  // Scroll handler that just closes the sidebar if needed
+  const handleNavLinkClick = (sectionId) => {
     if (isSidePanelOpen) {
       handleCloseSidePanel()
     }
-
-    // Special case for "home" - scroll to the very top
-    if (sectionId === "home") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      })
-      setActiveSection("home")
-      return
-    }
-
-    const section = document.getElementById(sectionId)
-    if (section) {
-      // Get the navbar height to offset the scroll position
-      const navbar = document.querySelector("nav")
-      const navbarHeight = navbar ? navbar.offsetHeight : 0
-
-      // Calculate the target scroll position with offset
-      const targetPosition = section.offsetTop - navbarHeight
-
-      // Smooth scroll to the target position
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      })
-
-      // Update active section
-      setActiveSection(sectionId)
-    }
+    // Let the native anchor behavior handle the scrolling
+    setActiveSection(sectionId)
   }
-
 
   return (
     <>
+      {/* Add a hidden "top" anchor at the very top of the page */}
+      <div id="top" className="absolute top-0"></div>
+      
       {/* Fixed Navbar */}
       <nav
         className={cn(
@@ -144,8 +133,8 @@ const Navbar = () => {
           <div className="relative flex items-center justify-between h-16">
             {/* Logo */}
             <a
-              href="#home"
-              onClick={(e) => scrollToSection(e, "home")}
+              href="#top"
+              onClick={() => handleNavLinkClick("top")}
               className="text-white font-bold text-xl transition-transform hover:scale-110 hover:text-[#8ecae6] duration-300"
             >
               Mark.
@@ -184,7 +173,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={(e) => scrollToSection(e, item.href.substring(1))}
+                  onClick={() => handleNavLinkClick(item.href.substring(1))}
                   className={cn(
                     "flex items-center text-white hover:text-[#8ecae6] transition duration-300 relative group",
                     activeSection === item.href.substring(1) && "text-[#8ecae6]",
@@ -223,7 +212,7 @@ const Navbar = () => {
             onClick={(e) => e.stopPropagation()} // Prevent clicks inside sidebar from closing it
           >
             <div className="flex justify-between items-center mb-8">
-              <a href="#home" onClick={(e) => scrollToSection(e, "home")} className="text-[#8ecae6] font-bold text-xl">
+              <a href="#top" onClick={() => handleNavLinkClick("top")} className="text-[#8ecae6] font-bold text-xl">
                 Mark.
               </a>
               <button
@@ -240,7 +229,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={(e) => scrollToSection(e, item.href.substring(1))}
+                  onClick={() => handleNavLinkClick(item.href.substring(1))}
                   className={cn(
                     "flex items-center bg-white/10 text-white border border-white/20 backdrop-blur-sm p-4 rounded-xl hover:bg-[#8ecae6]/20 hover:text-[#8ecae6] transition-all duration-300 transform",
                     activeSection === item.href.substring(1) && "bg-[#8ecae6]/20 text-[#8ecae6] border-[#8ecae6]/30",
