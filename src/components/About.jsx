@@ -67,23 +67,23 @@ const About = () => {
                 {/* HTML */}
                 <div className="mb-3">
                 <div className="flex justify-between mb-1">
-  <span className="text-white flex items-center space-x-1">
-    <span>HTML/</span>
-    <RotatingText
-      texts={['CSS', 'Bootstrap', 'Tailwind']}
-      mainClassName="text-white"
-      staggerFrom="last"
-      initial={{ y: "100%" }}
-      animate={{ y: 0 }}
-      exit={{ y: "-120%" }}
-      staggerDuration={0.025}
-      splitLevelClassName="overflow-hidden"
-      transition={{ type: "spring", damping: 30, stiffness: 400 }}
-      rotationInterval={2000}
-    />
-  </span>
-  <span className="text-[#8ecae6]">80%</span>
-</div>
+                  <span className="text-white flex items-center space-x-1">
+                    <span>HTML/</span>
+                    <RotatingText
+                      texts={['CSS', 'Bootstrap', 'Tailwind']}
+                      mainClassName="text-white"
+                      staggerFrom="last"
+                      initial={{ y: "100%" }}
+                      animate={{ y: 0 }}
+                      exit={{ y: "-120%" }}
+                      staggerDuration={0.025}
+                      splitLevelClassName="overflow-hidden"
+                      transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                      rotationInterval={2000}
+                    />
+                  </span>
+                  <span className="text-[#8ecae6]">80%</span>
+                </div>
 
 
                   <div className="w-full bg-gray-700 rounded-full h-2">
