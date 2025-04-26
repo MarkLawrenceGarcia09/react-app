@@ -1,4 +1,5 @@
-import { Code, Layout, Smartphone, Globe, Palette, Gauge } from 'lucide-react'
+import { Code, Layout, Smartphone } from 'lucide-react'
+import Magnet from './Magnet/Magnet'
 
 const Services = () => {
   const serviceItems = [
@@ -17,9 +18,7 @@ const Services = () => {
       title: 'Responsive Design',
       description: 'Ensuring your website looks and functions perfectly across all devices, from desktops to smartphones.'
     }
-   
-    
-  ]
+  ];
 
   return (
     <section id="services" className="py-20 min-h-screen flex items-center">
@@ -35,21 +34,20 @@ const Services = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {serviceItems.map((service, index) => (
-            <div 
-              key={index} 
-              className="bg-black/30 backdrop-blur-sm p-6 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:bg-black/40"
-            >
-              <div className="bg-[#8ecae6]/10 p-4 rounded-full inline-block mb-4">
-                {service.icon}
+            <Magnet key={index} padding={50} disabled={false} magnetStrength={0.08}>
+              <div className="bg-black/30 backdrop-blur-sm p-6 rounded-xl transition-all duration-300 hover:transform hover:scale-105 hover:bg-black/40 cursor-pointer">
+                <div className="bg-[#8ecae6]/10 p-4 rounded-full inline-block mb-4">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                <p className="text-white/80">{service.description}</p>
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
-              <p className="text-white/80">{service.description}</p>
-            </div>
+            </Magnet>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Services
+export default Services;
